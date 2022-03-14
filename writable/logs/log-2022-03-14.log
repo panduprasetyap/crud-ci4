@@ -1,0 +1,74 @@
+CRITICAL - 2022-03-14 02:44:04 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 C:\xampp\htdocs\ci-4\ci4-crud\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('test_view')
+#1 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('test_view')
+#2 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci-4\ci4-crud\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci-4\ci4-crud\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-14 02:45:05 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 C:\xampp\htdocs\ci-4\ci4-crud\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('test_view')
+#1 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('test_view')
+#2 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ci-4\ci4-crud\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\ci-4\ci4-crud\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-03-14 03:45:06 --> Table 'mahasiswa.mahasiswa' doesn't exist
+CRITICAL - 2022-03-14 03:45:06 --> Table 'mahasiswa.mahasiswa' doesn't exist
+#0 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci-4\ci4-crud\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci-4\ci4-crud\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ci-4\ci4-crud\app\Models\Mahasiswa_model.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ci-4\ci4-crud\app\Controllers\Mahasiswa.php(14): App\Models\Mahasiswa_model->getMahasiswa()
+#8 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(832): App\Controllers\Mahasiswa->index()
+#9 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#10 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-4\ci4-crud\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-4\ci4-crud\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-03-14 03:48:51 --> Column 'jurusan' cannot be null
+CRITICAL - 2022-03-14 03:48:51 --> Column 'jurusan' cannot be null
+#0 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `mh...', 0)
+#1 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mh...')
+#2 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mh...')
+#3 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mh...', Array, false)
+#4 C:\xampp\htdocs\ci-4\ci4-crud\app\Models\Mahasiswa_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci-4\ci4-crud\app\Controllers\Mahasiswa.php(29): App\Models\Mahasiswa_model->saveMahasiswa(Array)
+#6 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(832): App\Controllers\Mahasiswa->add()
+#7 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-4\ci4-crud\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-4\ci4-crud\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-03-14 03:50:34 --> Column 'jurusan' cannot be null
+CRITICAL - 2022-03-14 03:50:34 --> Column 'jurusan' cannot be null
+#0 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `mh...', 0)
+#1 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mh...')
+#2 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mh...')
+#3 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mh...', Array, false)
+#4 C:\xampp\htdocs\ci-4\ci4-crud\app\Models\Mahasiswa_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci-4\ci4-crud\app\Controllers\Mahasiswa.php(29): App\Models\Mahasiswa_model->saveMahasiswa(Array)
+#6 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(832): App\Controllers\Mahasiswa->add()
+#7 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-4\ci4-crud\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-4\ci4-crud\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-03-14 03:50:54 --> Column 'jurusan' cannot be null
+CRITICAL - 2022-03-14 03:50:54 --> Column 'jurusan' cannot be null
+#0 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `mh...', 0)
+#1 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mh...')
+#2 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mh...')
+#3 C:\xampp\htdocs\ci-4\ci4-crud\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mh...', Array, false)
+#4 C:\xampp\htdocs\ci-4\ci4-crud\app\Models\Mahasiswa_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ci-4\ci4-crud\app\Controllers\Mahasiswa.php(29): App\Models\Mahasiswa_model->saveMahasiswa(Array)
+#6 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(832): App\Controllers\Mahasiswa->add()
+#7 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 C:\xampp\htdocs\ci-4\ci4-crud\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-4\ci4-crud\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-4\ci4-crud\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
